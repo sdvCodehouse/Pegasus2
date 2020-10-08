@@ -3,7 +3,7 @@
 <div id="taskCommentList" class="form-group">
     @for (var i = 0; i < Model.Count; i++)
     {
-        <div class="edit-comment-section col-md-8 col-md-offset-2">
+        <div class="edit-comment-section col-md-8 offset-md-2">
             <input type="hidden" asp-for="@Model[i].Id" />
             <input type="hidden" asp-for="@Model[i].TaskId" />
             <input type="hidden" asp-for="@Model[i].Created"/>
