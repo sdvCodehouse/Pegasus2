@@ -71,7 +71,7 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
-/* css from previous version */
+/* css specific to Pegasus */
 
 body {
     padding-top: 50px;
@@ -109,6 +109,18 @@ html {
     padding-top: 20px;
 }
 
+.card-default {
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px #000000;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.card-header h5 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.15rem;
+}
+
 .edit-task {
     margin-top: 15px;
 }
@@ -125,13 +137,16 @@ html {
     width: 75px;
 }
 
-.table-row-condensed {
-    height: 20px;
-    overflow: hidden;
+.hide-icon {
+    display: none !important;
 }
 
-.table-font-sm {
-    font-size: 0.9em
+.no-border {
+    border: 0;
+}
+
+.no-background {
+    background-color: white;
 }
 
 .priority-icon-4 {
@@ -146,19 +161,38 @@ html {
     color: lightgrey;
 }
 
+.project-list {
+    font-size: 0.90rem;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
 .project-list i {
     padding-right: 4px;
+}
+
+.table-row-condensed {
+    height: 20px;
+    overflow: hidden;
+}
+
+.table-font-sm {
+    font-size: 0.8em
+}
+
+.table-narrow-lined td {
+    padding: .40rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.03);
 }
 
 .task-comment {
     font-size: 11px;
     padding-left: 12px;
 }
-/*.task-comment textarea {
-    border: 0;
-    resize: none;
-    box-shadow: none;
-}*/
+
 .task-comment-date {
     padding-left: 12px;
     color: #8c8c8c;

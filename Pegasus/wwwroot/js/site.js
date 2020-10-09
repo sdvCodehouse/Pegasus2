@@ -27,12 +27,12 @@ $(function () {
     var projectListItems = $(".project-list-item");
     var taskFilterList = $(".task-filter");
     $(function () {
-        $(projectListItems).find("i").addClass("hide");
+        $(projectListItems).find("i").addClass("hide-icon");
         $(projectListItems).filter(function () {
             return $(this).attr("value") === currentSettings.projectId;
-        }).find("i").removeClass("hide");
-        $(taskFilterList).find("i").addClass("hide");
-        $(taskFilterList[currentSettings.taskFilterId]).find("i").removeClass("hide");
+        }).find("i").removeClass("hide-icon");
+        $(taskFilterList).find("i").addClass("hide-icon");
+        $(taskFilterList[currentSettings.taskFilterId]).find("i").removeClass("hide-icon");
     });
 
     var updateList = function () {
@@ -50,8 +50,8 @@ $(function () {
     var sidebarAction = function (item, hiddenItem, itemList) {
         var selectedId = $(item).attr("value");
         $(hiddenItem).val(selectedId);
-        $(itemList).find("i").addClass("hide");
-        $(item).find("i").removeClass("hide");
+        $(itemList).find("i").addClass("hide-icon");
+        $(item).find("i").removeClass("hide-icon");
         updateList();
         return selectedId;
     };

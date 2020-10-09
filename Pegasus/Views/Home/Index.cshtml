@@ -5,10 +5,10 @@
 <form method="get" action="@Url.Action("Index")" data-pgs-ajax="true" data-pgs-target="#projectTaskList">
     <div class="row task-list">
         <div class="col-sm-3">
-            <div class="card panel-default">
+            <div class="card card-default">
                 <div class="card-header">
                     <input id="projectId" type="hidden" asp-for="Project.Id"/>
-                    <h4>Projects</h4>
+                    <h5>Projects</h5>
                 </div>
                 <div class="card-body project-list">
                     <div>
@@ -16,15 +16,15 @@
                     </div>
                     @foreach (var project in Model.Projects)
                     {
-                        <div>
-                            <a class="project-list-item" asp-action="Index" value="@project.Id"><i class="fa fa-angle-right"></i>@project.Name</a>
-                        </div>
+                    <div>
+                        <a class="project-list-item" asp-action="Index" value="@project.Id"><i class="fa fa-angle-right"></i>@project.Name</a>
+                    </div>
                     }
                 </div>
             </div>
-            <div class="card panel-default">
+            <div class="card card-default">
                 <div class="card-header">
-                    <h4>Task Filters</h4>
+                    <h5>Task Filters</h5>
                 </div>
                 <input id="taskFilterId" type="hidden" asp-for="TaskFilterId"/>
                 <div class="card-body project-list">
