@@ -7,10 +7,9 @@ namespace PegasusTests
         [Test]
         public void PoorInputStringToTryParse_IntIsZero()
         {
-            int projectId;
-            string testStr = "1,2";
+            const string testStr = "1,2";
 
-            int.TryParse(testStr, out projectId);
+            int.TryParse(testStr, out var projectId);
 
             Assert.AreEqual(0, projectId);
         }
@@ -18,10 +17,9 @@ namespace PegasusTests
         [Test]
         public void NullInputStringToTryParse_IntIsZero()
         {
-            int projectId;
-            string testStr = null;
+            const string testStr = null;
 
-            int.TryParse(testStr, out projectId);
+            int.TryParse(testStr, out var projectId);
 
             Assert.AreEqual(0, projectId);
         }
