@@ -6,10 +6,10 @@
 
 <h2>Delete</h2>
 <form asp-action="Delete">
-    <h3>Are you sure you want to delete @Model.Name?</h3><input type="submit" value="Confirm" class="btn btn-danger" />
+    <h4>Are you sure you want to delete @Model.Name?</h4><input type="submit" value="Confirm" class="btn btn-danger" />
     <div>
         <hr />
-        <dl class="dl-horizontal">
+        <dl>
             <dt>
                 @Html.DisplayNameFor(model => model.Name)
             </dt>
@@ -24,7 +24,7 @@
             </dd>
         </dl>
 
-        <div class="form-actions no-color">
+        <div>
             <a asp-action="Index">Back to List</a>
         </div>
     </div>
