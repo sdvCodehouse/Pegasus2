@@ -2,7 +2,7 @@
 using Pegasus.Entities;
 using Pegasus.Services;
 
-namespace Pegasus.ViewModels.Home
+namespace Pegasus.Models.Home
 {
     public class TaskViewModelArgs
     {

@@ -3,7 +3,7 @@
 <div id="taskCommentList" class="form-group">
     @for (var i = 0; i < Model.Count; i++)
     {
-        <div class="edit-comment-section col-md-8 col-md-offset-2">
+        <div class="comment-edit-section col-md-8">
             <input type="hidden" asp-for="@Model[i].Id" />
             <input type="hidden" asp-for="@Model[i].TaskId" />
             <input type="hidden" asp-for="@Model[i].Created"/>
@@ -19,8 +19,8 @@
             <div class="task-comment">
                 <p>@Html.Raw(Model[i].Comment.Replace(Environment.NewLine, "<br/>"))</p>
             </div>
-            <div class="task-comment-edit hide">
-                <textarea data-autoresize rows="1" asp-for="@Model[i].Comment" class="task-comment-text form-control form-no-max-control"></textarea>
+            <div class="comment-task-edit hide">
+                <textarea data-autoresize rows="1" asp-for="@Model[i].Comment" class="comment-task-text form-control form-no-max-control"></textarea>
                 <span asp-validation-for="@Model[i].Comment" class="text-danger"></span>
             </div>
         </div>

@@ -1,5 +1,3 @@
-using System;
-
 namespace Pegasus.Models
 {
     public class ErrorViewModel
