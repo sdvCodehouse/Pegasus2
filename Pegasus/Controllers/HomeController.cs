@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pegasus.Entities;
 using Pegasus.Extensions;
+using Pegasus.Models;
+using Pegasus.Models.Home;
 using Pegasus.Services;
-using Pegasus.ViewModels;
-using Pegasus.ViewModels.Home;
 
 namespace Pegasus.Controllers
 {

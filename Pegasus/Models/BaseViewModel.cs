@@ -1,4 +1,4 @@
-﻿namespace Pegasus.ViewModels
+﻿namespace Pegasus.Models
 {
     public class BaseViewModel
     {

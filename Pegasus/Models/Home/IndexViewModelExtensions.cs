@@ -3,7 +3,7 @@ using System.Linq;
 using Pegasus.Entities;
 using Pegasus.Entities.Enumerations;
 
-namespace Pegasus.ViewModels.Home
+namespace Pegasus.Models.Home
 {
     public static class IndexViewModelExtensions
     {
