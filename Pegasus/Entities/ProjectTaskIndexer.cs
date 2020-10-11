@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Pegasus.Entities
+﻿namespace Pegasus.Entities
 {
     public class ProjectTaskIndexer
     {

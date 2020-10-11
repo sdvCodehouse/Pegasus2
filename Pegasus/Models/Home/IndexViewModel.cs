@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Pegasus.Entities;
 
-namespace Pegasus.ViewModels.Home
+namespace Pegasus.Models.Home
 {
     public class IndexViewModel : BaseViewModel
     {
