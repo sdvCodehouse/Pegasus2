@@ -109,6 +109,13 @@ html {
     padding-top: 20px;
 }
 
+.btn-group-xs > .btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
 .card-default {
     margin-bottom: 20px;
     box-shadow: 0 1px 1px #000000;
@@ -121,12 +128,30 @@ html {
     font-size: 1.15rem;
 }
 
+/* ReSharper disable once DeclarationIsEmpty */
+.comment-cancel-button,
+.comment-delete-button,
+.comment-edit-button,
+.comment-edit-buttons,
+.comment-edit-section,
+.comment-task-edit,
+.comment-task-text {
+}
+
 .edit-task {
     margin-top: 15px;
 }
 
 .form-control {
     font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+    }
 }
 
 .form-no-max-control {
@@ -137,7 +162,7 @@ html {
     width: 75px;
 }
 
-.hide-icon {
+.hide {
     display: none !important;
 }
 
@@ -171,6 +196,10 @@ html {
     padding-right: 4px;
 }
 
+/* ReSharper disable once DeclarationIsEmpty */
+.project-list-item, .task-filter {
+}
+
 .table-row-condensed {
     height: 20px;
     overflow: hidden;
@@ -180,11 +209,17 @@ html {
     font-size: 0.8em
 }
 
-.table-narrow-lined td {
-    padding: .40rem;
+.table-narrow-lined td, .table-narrow-lined th {
+    padding: .35rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.table-narrow-lined th {
+    border-top: 0;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #000000;
     background-color: rgba(0,0,0,.03);
 }
 
